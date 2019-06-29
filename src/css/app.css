@@ -1,0 +1,58 @@
+/* Your app styles here */
+/* Custom color theme */
+:root {
+  --f7-theme-color: #039547;
+  --f7-theme-color-shade: #cdf3fb;
+  --f7-theme-color-tint: #ffffff;
+}
+/* Invert navigation bars to fill style */
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --f7-bars-bg-color: var(--f7-theme-color);
+  --f7-bars-text-color: #fff;
+  --f7-bars-link-color: #fff;
+  --f7-navbar-subtitle-text-color: rgba(255,255,255,0.85);
+  --f7-bars-border-color: transparent;
+  --f7-tabbar-link-active-color: #fff;
+  --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
+  --f7-searchbar-bg-color: var(--f7-bars-bg-color);
+  --f7-searchbar-input-bg-color: #fff;
+  --f7-searchbar-input-text-color: #000;
+  --f7-sheet-border-color: transparent;
+  --f7-tabbar-link-active-border-color: #fff;
+}
+.appbar,
+.navbar,
+.toolbar,
+.subnavbar,
+.calendar-header,
+.calendar-footer {
+  --f7-touch-ripple-color: var(--f7-touch-ripple-white);
+  --f7-link-highlight-color: var(--f7-link-highlight-white);
+  --f7-button-text-color: #fff;
+  --f7-button-pressed-bg-color: rgba(255,255,255,0.1);
+},
+.framework7-root.page-content {
+  background: #f6f6f6 !important;
+},
+.tabs.page-content {
+  background: #f6f6f6 !important;
+},
+.card-not {
+  overflow: hidden;
+  height: 300px;
+  background: var(--f7-card-expandable-bg-color);
+  position: relative;
+  transform-origin: center center;
+  transition-property: transform, border-radius;
+  border-radius: var(--f7-card-expandable-border-radius);
+  z-index: 2;
+  transition-duration: 200ms;
+  margin-left: calc(var(--f7-card-expandable-margin-horizontal) + var(--f7-safe-area-left));
+  margin-right: calc(var(--f7-card-expandable-margin-horizontal) + var(--f7-safe-area-right));
+  margin-top: var(--f7-card-expandable-margin-vertical);
+  margin-bottom: var(--f7-card-expandable-margin-vertical);
+  box-shadow: var(--f7-card-expandable-box-shadow);
+  font-size: var(--f7-card-expandable-font-size);
+}
